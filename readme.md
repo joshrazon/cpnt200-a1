@@ -26,3 +26,5 @@ by: [*Joshua Razon*](https://github.com/joshrazon)
 
 ## Comments
 Really good intro to PHP assignment, the sample file structure and code from website examples helped a huge amount
+
+The website has a nav and header; $page_title is implemented on /includes/header.php

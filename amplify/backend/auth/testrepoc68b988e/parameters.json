@@ -1,12 +1,12 @@
 {
-    "identityPoolName": "testrepo7ded86ab_identitypool_7ded86ab",
+    "identityPoolName": "testrepoc68b988e_identitypool_c68b988e",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "testre7ded86ab",
-    "userPoolName": "testrepo7ded86ab_userpool_7ded86ab",
+    "resourceNameTruncated": "testrec68b988e",
+    "userPoolName": "testrepoc68b988e_userpool_c68b988e",
     "autoVerifiedAttributes": [
         "email"
     ],
-    "mfaConfiguration": "OFF",
+    "mfaConfiguration": "OPTIONAL",
     "mfaTypes": [
         "SMS Text Message"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "testre7ded86ab_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "testrec68b988e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "7ded86ab",
-    "resourceName": "testrepo7ded86ab",
+    "sharedId": "c68b988e",
+    "resourceName": "testrepoc68b988e",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,9 +45,22 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
-    "userPoolGroupList": [],
+    "useDefault": "manual",
+    "userPoolGroupList": [
+        "AuthUserPool1"
+    ],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": []
+    "dependsOn": [],
+    "thirdPartyAuth": false,
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": "{}",
+    "hostedUI": false,
+    "adminQueryGroup": "AuthUserPool1",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "authProviders": []
 }

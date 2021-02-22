@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "testrepoc68b988e": {}
+        "testrepoc68b988e": {},
+        "userPoolGroups": {}
       },
       "function": {
         "AdminQueriesc7201260": {
